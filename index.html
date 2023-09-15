@@ -118,38 +118,37 @@
     </section>
 
     <section class="four flex flex-col bg-white md:flex-row object-cover">
-      <picture
-        class="flex md:w-1/2 relative text-dark-desaturated-cyan justify-center"
-      >
-        <img
-          src="images/mobile/image-graphic-design.jpg"
-          alt=""
-          class="w-full"
-        />
-        <div class="absolute top-2/3 text-center w-96">
-          <h2 class="font-serif font-bold md:text-5xl text-4xl pt-6">Graphic design</h2>
-          <p
-            class="py-8 text-center text-xl leading-relaxed text-very-dark-grayish-blue"
-          >
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-          </p>
-        </div>
-      </picture>
-
-      <div class="flex md:w-1/2 relative text-dark-blue justify-center">
-        <img src="images/mobile/image-photography.jpg" alt="" class="w-full" />
-        <div class="absolute top-2/3 text-center w-96">
-          <h2 class="font-serif font-bold md:text-5xl text-4xl pt-6">Photography</h2>
-          <p
-            class="py-8 text-center text-xl leading-relaxed text-very-dark-grayish-blue"
-          >
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
+      <div class="relative md:w-1/2">
+        <picture>
+          <source srcset="images/desktop/image-graphic-design.jpg" media="(min-width: 767px)" class="">
+          <img srcset="images/mobile/image-graphic-design.jpg" alt="" class="w-full"/>
+        </picture>
+        <div class="absolute top-2/3 text-center w-full md:top-3/5 text-dark-desaturated-cyan">
+          <h2 class="font-serif font-bold text-5xl pb-6 text-center md:text-4xl">
+            Graphic design
+          </h2>
+          <p class="pb-14 text-center text-2xl leading-relaxed w-96">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients' attention.
           </p>
         </div>
       </div>
+
+        <div class="relative md:w-1/2">
+          <picture>
+            <source srcset="images/desktop/image-photography.jpg" media="(min-width: 767px)" class="">
+            <img srcset="images/mobile/image-photography.jpg" alt="" class="w-full"/>
+          </picture>
+          <div class="absolute top-2/3 text-center w-full md:top-3/5 text-dark-blue">
+            <h2 class="font-serif font-bold text-5xl pb-6 text-cente md:text-4xl">
+              Photography
+            </h2>
+            <p class="pb-14 text-center text-2xl leading-relaxed md:text-4xl w-96">
+              Increase your credibility by getting the most stunning, high-quality
+              photos that improve your business image.
+            </p>
+          </div>
+        </div>
     </section>
 
     <section class="five bg-white text-center object-cover">
