@@ -555,6 +555,10 @@ video {
   margin-right: auto;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -638,9 +642,18 @@ video {
   padding: 3rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-10 {
@@ -737,6 +750,11 @@ video {
   letter-spacing: 0.1em;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-dark-blue {
   --tw-text-opacity: 1;
   color: hsl(198 62% 26% / var(--tw-text-opacity));
@@ -805,10 +823,38 @@ video {
   z-index: -1;
 }
 
+/*THere was no tailwind setting that rounded the contact button enough,
+so I must create a custom one*/
+
+#contact {
+  border-radius: 50px;
+}
+
+/*Makes navigation disappear when in mobile size*/
+
+@media (max-width: 767px) {
+  .navigation{
+    display: none;
+  }
+}
+
+.active\:bg-opacity-30:active {
+  --tw-bg-opacity: 0.3;
+}
+
+.active\:text-white:active {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-full {
