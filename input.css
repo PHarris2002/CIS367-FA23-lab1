@@ -41,3 +41,17 @@ z-index: 1;
         border-radius: 2px;
         z-index: -1;
     }
+    
+/*THere was no tailwind setting that rounded the contact button enough,
+so I must create a custom one*/
+#contact {
+    border-radius: 50px;
+}
+    
+/*Makes navigation disappear when in mobile size*/
+@media (max-width: 767px) {
+    .navigation{
+        display: none;
+    }
+
+    }
